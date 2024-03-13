@@ -1,0 +1,97 @@
+<ion-content>
+    <ion-title class="ion-text-center">
+        {{titulo}}
+    </ion-title>
+    <ion-grid>
+        <ion-row>
+            <ion-col size="12" size-md="6" offset-md="3">
+                <form>
+                    <ion-row class="input-row">
+                        <ion-item lines="none" class="input-item">
+                            <ion-label position="floating">Nombre</ion-label>
+                            <ion-input type="text "></ion-input>
+                            <small style="color: rgb(224, 87, 87);">Campo obligatorio</small>
+                        </ion-item>
+                        <ion-item lines="none">
+                            <ion-label position="floating">Sexo</ion-label>
+                            <ion-input type="text "></ion-input>
+                            <small style="color: rgb(224, 87, 87);">Campo obligatorio</small>
+                        </ion-item>
+                    </ion-row>
+                    <ion-row class="input-row ">
+                        <ion-item class="input-item" lines="none">
+                            <ion-label position="stacked"></ion-label>
+                            <!-- <ion-button (click)="openNewMnicipio()" expand="block" fill="clear">
+                                <ion-icon slot="start" name="add"></ion-icon>
+                            </ion-button> -->
+                            <ion-select type="number " placeholder="Selecciona un municipio">
+                                <ion-select-option></ion-select-option>
+                                <ion-select-option>Municipio 2</ion-select-option>
+                                <ion-select-option>Municipio</ion-select-option>
+                            </ion-select>
+                            <ion-button (click)="openNewMnicipio()" expand="block" fill="clear">Nuevo municipio
+                                <ion-icon slot="start" name="add" style="color: forestgreen;"></ion-icon>
+                            </ion-button>
+                            <!-- <small style="color: rgb(224, 87, 87); ">Campo obligatorio</small> -->
+                        </ion-item>
+                        <ion-item class="input-item " lines="none ">
+                            <ion-label position="stacked "></ion-label>
+                            <!-- <ion-button (click)="openNewMnicipio() " expand="block " fill="clear ">
+                                <ion-icon slot="start " name="add "></ion-icon>
+                            </ion-button> -->
+                            <ion-select type="number " placeholder="Selecciona una región ">
+                                <ion-select-option></ion-select-option>
+                                <ion-select-option>Region 1</ion-select-option>
+                                <ion-select-option>Region 2</ion-select-option>
+                            </ion-select>
+                            <ion-button (click)="openNewRegion() " expand="block " fill="clear ">Agregar región
+                                <ion-icon slot="start " name="add "></ion-icon>
+                            </ion-button>
+                            <!-- <small style="color: rgb(224, 87, 87); ">Campo obligatorio</small> -->
+                        </ion-item>
+                        <ion-item class="input-item " lines="none ">
+                            <ion-label position="stacked "></ion-label>
+                            <!-- <ion-button (click)="openNewMnicipio() " expand="block " fill="clear ">
+                                <ion-icon slot="start " name="add "></ion-icon>
+                            </ion-button> -->
+                            <ion-select type="number " placeholder="Selecciona un clima ">
+                                <ion-select-option></ion-select-option>
+                                <ion-select-option>Clima 1</ion-select-option>
+                                <ion-select-option>Clima 2</ion-select-option>
+                            </ion-select>
+                            <ion-button (click)="openNewClima() " expand="block " fill="clear ">Agregar clima
+                                <ion-icon slot="start " name="add "></ion-icon>
+                            </ion-button>
+                            <!-- <small style="color: rgb(224, 87, 87); ">Campo obligatorio</small> -->
+                        </ion-item>
+                    </ion-row>
+                    <ion-row class=" ">
+                        <ion-col>
+                            <ion-item class=" " lines="none ">
+                                <ion-label>Selecciona fecha y hora</ion-label>
+                                <ion-datetime-button datetime="datetime "></ion-datetime-button>
+                                <ion-modal [keepContentsMounted]="true ">
+                                    <ng-template>
+                                        <ion-datetime id="datetime "></ion-datetime>
+                                    </ng-template>
+                                </ion-modal>
+                            </ion-item>
+                        </ion-col>
+                    </ion-row>
+                    <ion-item class="input-item " lines="none ">
+                        <ion-label position="floating " class=" ">Informacion adicional</ion-label>
+                        <ion-input type="number "><br>
+                            <br> <br>
+                        </ion-input>
+                    </ion-item>
+                    <ion-item lines="none ">
+                        <ion-button (click)="setOpen(true)" [disabled]=" " class=" button-container " type="submit " expand="block " class="rounded-button ">
+                            Guardar
+                        </ion-button>
+                        <ion-toast [isOpen]="isToastOpen" message="Especie guardada correctamente" [duration]="5000" (didDismiss)="setOpen(false)"></ion-toast>
+                    </ion-item>
+                </form>
+            </ion-col>
+        </ion-row>
+    </ion-grid>
+</ion-content>

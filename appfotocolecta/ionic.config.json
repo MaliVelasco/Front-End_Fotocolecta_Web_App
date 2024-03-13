@@ -1,0 +1,7 @@
+{
+  "name": "appfotocolecta",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

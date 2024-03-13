@@ -1,0 +1,86 @@
+// Cambia los colores según tus preferencias
+$colors: ( primary: #2ecc71, secondary: #27ae60, success: #8fd492, danger: #e74c3c, // ...
+);
+// Personaliza otros estilos aquí
+ion-input {
+    width: 100%;
+    border-radius: 5px;
+    border: 0px solid #2ad340;
+    box-shadow: 0px 0px 4px 0px #22d62b inset;
+    padding-left: 10px;
+    /* Puedes ajustar el valor según tus necesidades */
+    text-indent: 10px;
+    /* Puedes ajustar el valor según tus necesidades */
+}
+
+.espacioImg {
+    padding-left: 10px;
+    /* Puedes ajustar el valor según tus necesidades */
+    cursor: pointer;
+    color: white;
+    /* Color de texto blanco */
+    background: transparent;
+    /* Fondo completamente transparente */
+    position: relative;
+    /* Añadimos posición relativa para el texto */
+}
+
+.button-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    height: 100%;
+    top: auto;
+    margin-top: 30px;
+    /* Espacio opcional en la parte superior del botón */
+    padding-bottom: 20px;
+    /* Espacio opcional en la parte inferior del botón */
+}
+
+ion-button {
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.rounded-button {
+    border-radius: 20px;
+    /* Ajusta el valor según el grado de redondeo deseado */
+    width: 500%;
+    /* Ajusta el ancho del botón según tus necesidades */
+    height: 35px;
+    /* Ajusta el alto del botón según tus necesidades */
+}
+
+ion-item {
+    margin-bottom: 10px;
+}
+
+ion-select {
+    width: 100%;
+    border-radius: 5px;
+    border: 1px solid #5ae277;
+    box-shadow: 0px 0px 4px 0px #5A5A5A inset;
+    padding-left: 50px;
+    /* Puedes ajustar el valor según tus necesidades */
+}
+
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    /* Espacio entre los elementos */
+    flex: 1;
+    /* Para que los elementos ocupen el mismo espacio en la fila */
+}
+
+.input-item {
+    flex: 1;
+    /* Para que los elementos ocupen el mismo espacio en la fila */
+    background-color: transparent;
+}
+
+.imgadd {
+    width: 100px;
+    align-content: center;
+    margin: 0% 0% 0% 40%;
+    text-align: center;
+}
